@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<td>
+<table border=0 width="100%" cellpadding=1 cellspacing=0>
+<tr>
+	<td class="tableOutline2">
+		<table border=0 width="100%" cellpadding=2 cellspacing=0>
+		<tr class="tableHead2">
+			<td>
+				<b>{% block title %}{% endblock %}</b>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+<p>{% block publish %}{% endblock %}<p>
+</td>
+{% endblock %}

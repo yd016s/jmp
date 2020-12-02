@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<td>
+<table border=0 width="100%" cellpadding=1 cellspacing=0>
+<tr>
+	<td class="tableOutline2">
+		<table border=0 width="100%" cellpadding=2 cellspacing=0>
+		<tr class="tableHead2">
+			<td>
+				<b>recent articles</b>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<br>
+{% for article in articles %}
+<li><a href=" {{ url_for('post', article = article.html) }} ">{{ article.title }}</li>
+{% endfor %}
+</td>
+{% endblock %}
